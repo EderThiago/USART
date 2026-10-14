@@ -66,7 +66,7 @@ while(!(USARTx->SR&USART_SR_TXE)){}
 
 while(*string){
     usart_send_char(USARTx, *string);
-    string++;
+    string++;//como es puntero, se desplaza en direccion de memoria
              }
     
 }
